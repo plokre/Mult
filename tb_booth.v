@@ -29,7 +29,7 @@ begin
 	count = 0;
 	reset = 1'b1;
 	mult = 4'b0101;
-	multiplier = 4'b0111;
+	multiplier = 4'b1111;
 	multiplicand = {4'b0000,mult};
 	$dumpfile("tb_booth.vcd");
 	$dumpvars(0,tb_booth);
