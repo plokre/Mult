@@ -16,20 +16,13 @@ booth b1(result_out,
 	 reset
 	);
 
-/*add a1(result_out, 
-      8'b00000110, 
-      8'b00000011, 
-      clk,
-      reset
-     );*/
-
 initial
 begin
 	clk = 0;
 	count = 0;
 	reset = 1'b1;
-	mult = 4'b0101;
-	multiplier = 4'b1111;
+	mult = 4'b1011;
+	multiplier = 4'b0101;
 	multiplicand = {4'b0000,mult};
 	$dumpfile("tb_booth.vcd");
 	$dumpvars(0,tb_booth);

@@ -24,7 +24,7 @@ input reset;
 
 reg s, c;
 
-always@(posedge clk)
+always@(posedge clk, c_in)
 begin
 	if(reset == 1'b1) begin
 		s = 1'b0;
